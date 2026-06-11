@@ -266,3 +266,111 @@ footer p {
         grid-template-columns: 1fr; /* Uma coluna em telas pequenas */
     }
 }
+
+.social-proof {
+    margin-top: -5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stars {
+    color: #f39c12; /* Amarelo ouro para as estrelas */
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.rating-note {
+    font-size: 0.9em;
+    color: #555;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.product-benefits {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #28a745;
+}
+
+.product-benefits ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-benefits ul li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #333;
+    font-weight: 500;
+}
+
+.product-price {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.urgency-tag {
+    background-color: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+
+/* Customizações Rápidas - Versão Variante B */
+
+.product-rating {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.product-rating .stars {
+    color: #f1c40f; /* Tom dourado padrão para avaliações */
+    margin-right: 5px;
+}
+
+.product-rating .rating-text {
+    color: #7f8c8d;
+}
+
+/* Ajuste de margem para o bloco que foi movido para cima */
+.product-info .product-features {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-top: none;
+    padding-top: 0;
+}
+
+.product-info .product-features h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+/* Melhoria de Feedback de IHC no Ponteiro e Transição */
+.add-to-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.98); /* Feedback físico ao clicar */
+}
